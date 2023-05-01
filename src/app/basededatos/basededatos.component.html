@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <mat-toolbar>
+        <span style="width: 15%;">BASE DE DATOS</span>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="BUSCAR" >
+            </mat-form-field>
+            <div class="demo-section" >
+                <button style="color:black; background:lead; height: 60% ; margin-top: 2px" >
+                  BUSCAR
+                </button>
+                <button mat-button [matMenuTriggerFor]="menu" class="menu">Menu</button>
+                    <mat-menu #menu="matMenu">
+                    <button mat-menu-item>PERFIL</button>
+                    <button mat-menu-item>CONFIGURACIONES</button>
+                    </mat-menu>
+            </div>       
+
+      </mat-toolbar>
+      <hr>
+      <div class="menu-videos" >
+        <button mat-button [matMenuTriggerFor]="video" class="menu_videos">TEMAS</button>
+            <mat-menu #video="matMenu">
+            <button mat-menu-item>VIDEOS 1</button>
+            <button mat-menu-item>VIDEOS 2</button>
+            <button mat-menu-item>VIDEOS 3</button>
+            <button mat-menu-item>VIDEOS 4</button>
+            </mat-menu>
+    </div> 
+    <hr>  
+    <div class="videos">
+        <h1 style="color: white;">VIDEOS 1</h1>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/knVwokXITGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/yoeV4Ex8C8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/MRmmPJId5-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/u2bXiPJf9oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/yN1RnjZEosY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <div class="videos">
+        <h1 style="color: white;">VIDEOS 2</h1>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/knVwokXITGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/yoeV4Ex8C8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/MRmmPJId5-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/u2bXiPJf9oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/yN1RnjZEosY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      
+</body>
+</html>
+<mat-toolbar>
+ 
+  
+  
+    
+<script src="./basededatos.component.css"></script>

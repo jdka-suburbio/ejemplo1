@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(43, 43, 43);
+    margin: 2px;
+}
+.example-full-width{
+    width: 50%;
+	height:95%;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+  .demo-section {
+    width: 50%;
+	height:95%;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+.menu{
+    float: right;
+	height:70%;
+    border-radius: 10%;
+}
+.menu_videos{
+    width: 10%;
+	height:95%;
+    margin-top: 10px;
+    border-radius: 10%;
+    background: black;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-size-adjust: 30%;
+}
