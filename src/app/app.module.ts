@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './commons/menu/menu.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { InglesComponent } from './video/ingles/ingles.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    InglesComponent
   ],
   imports: [
     BrowserModule,
