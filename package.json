@@ -1,7 +1,7 @@
 {
   "name": "hellonode",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a simple application used in the [fly.io Getting Started](https://fly.io/docs/getting-started/node/)  documentation showing how to deploy a Node application using Flyctl's builtin Nodejs deployment option.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/fly-examples/hellonode#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   }
 }
