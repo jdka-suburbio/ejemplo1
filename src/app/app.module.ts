@@ -8,14 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './commons/menu/menu.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ProgramacionComponent } from './programacion/programacion.component';
 import { CuestionarioComponent } from './cuestionario/cuestionario.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuComponent,
+    ProgramacionComponent,
     CuestionarioComponent
   ],
   imports: [
