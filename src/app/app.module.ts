@@ -10,6 +10,7 @@ import { MenuComponent } from './commons/menu/menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ProgramacionComponent } from './programacion/programacion.component';
 import { CuestionarioComponent } from './cuestionario/cuestionario.component';
+import { IncioComponent } from './incio/incio.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CuestionarioComponent } from './cuestionario/cuestionario.component';
     HomeComponent,
     MenuComponent,
     ProgramacionComponent,
-    CuestionarioComponent
+    CuestionarioComponent,
+    IncioComponent
   ],
   imports: [
     BrowserModule,
