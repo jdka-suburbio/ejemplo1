@@ -2,6 +2,9 @@ body{
     background-color:rgb(43, 43, 43);
     margin: 2px;
 }
+.bd{
+    width: 15%;
+}
 .example-full-width{
     width: 50%;
 	height:95%;
@@ -30,4 +33,7 @@ body{
     padding: 1%;
     text-align: center;
     text-size-adjust: 30%;
+}
+.videos{
+    color: white;
 }
