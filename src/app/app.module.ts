@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { ProgramacionComponent } from './programacion/programacion.component';
 import { CuestionarioComponent } from './cuestionario/cuestionario.component';
 import { IncioComponent } from './incio/incio.component';
+import { IngleComponent } from './video/ingle/ingle.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IncioComponent } from './incio/incio.component';
     MenuComponent,
     ProgramacionComponent,
     CuestionarioComponent,
-    IncioComponent
+    IncioComponent,
+    IngleComponent
   ],
   imports: [
     BrowserModule,

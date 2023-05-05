@@ -1,0 +1,58 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background-color: #000000
+    }
+    .cabecera{
+        width: 50%;
+        height:10%;
+        border-radius: 10px;
+        padding:5px;
+        background-color: #842e7c;
+        color:#000000;
+        font-family:serif;
+        font-size:30px;
+        text-align: center;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    
+    
+    .contenido{
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height:200px;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px;
+        background-color:#6efdfb;
+        color: #000000;
+        font-size: 20px; 
+        font-family: center;
+        
+    }
+    
+    .seleccionar{
+        position: relative; left: 50px;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 15px;
+        background-color: #6EB3FD;
+        color: #FFFFFF;
+        font-size:15px;
+        text-align: center;
+    }
+    .iniciar{
+        width: 300px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 15px;
+        background-color: #6efdc1;
+        color: #6c1313;
+        font-size:15px;
+        text-align: center;
+    }
