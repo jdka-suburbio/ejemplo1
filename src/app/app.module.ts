@@ -11,6 +11,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { ProgramacionComponent } from './programacion/programacion.component';
 import { CuestionarioComponent } from './cuestionario/cuestionario.component';
 import { IncioComponent } from './incio/incio.component';
+import { DisenhoAlexComponent } from './videos/disenho-alex/disenho-alex.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,17 @@ import { IncioComponent } from './incio/incio.component';
     MenuComponent,
     ProgramacionComponent,
     CuestionarioComponent,
-    IncioComponent
+    IncioComponent,
+    DisenhoAlexComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
