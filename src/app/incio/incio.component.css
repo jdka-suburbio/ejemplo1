@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: rgb(255, 0, 0);
+    font-size:30px;
+    font-size: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 700px;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, hsla(34, 90%, 72%, 0.582), hsla(189, 87%, 70%, 0.521)), url(./imagenes/fondo.jpg) ;  
+    background: linear-gradient(to right, hsla(34, 90%, 72%, 0.582), hsla(189, 87%, 70%, 0.521)), url(./imagenes/fondo.jpg) ; 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 60px;
+    color:hsl(0, 0%, 0%);
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: hsl(204, 64%, 31%);
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content:space-evenly;
+}
+.imagen-about-use{
+    width: 45%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 45%;
+}
+.contenidos-texto h3{
+    margin-bottom:20px;
+}
+.contenidos-texto h3 span{ 
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgb(0, 0, 0);
+    margin-right: 5px;
+
+}
+.contenidos-texto p{
+    padding: 0px 0px 15px;
+    font-weight: 300;
+    text-align:justify;
+}
+
+
+.portafolio{
+    background:#dbcdf0;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgb(0, 0, .5);
+
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(327, 100%, 60%, 0.7) ;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color: ivory;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background-color: thistle;
+    display: flex;
+    width: 48%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    display: block;
+
+}
+.cards.card > .contenido-textos-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card > .contenido-textos-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+.about-services{
+    background: azure;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 90%;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
