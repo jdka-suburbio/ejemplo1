@@ -1,0 +1,83 @@
+ 
+button{
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 6px 15px;
+    color: #00bec9;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+    green, orange, white, lime,
+    lime, white, orange, green);
+    background-size: 800%;
+    border-radius: 25px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+  }
+
+  @keyframes glowing{
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 400% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .color-facebook{
+    color: var(--color-facebook);
+  }
+  .color-tiktok{
+    color: var(--color-tiktok);
+  }
+  .color-youtube{
+    color: var(--color-youtube);
+  }
+  .color-whatsapp{
+    color: var(--color-whatsapp);
+  }
+  :root{
+    --my-color-primary: #3e3e;
+    --my-color-secundary: #fc0202;
+    --my-color-tree: #00bec9;
+    --my-text-color-primary: #ffffff;
+    --color-busqueda:#ffffff;
+    --color-facebook:#3b5998;
+    --color-youtube:#ff1e00;
+    --color-tiktok:#050605;
+    --color-whatsapp:#02b208;
+  }
+  .my-nav-bar a{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+ 
+/*   .mi-parrafo {
+    color: red;
+ } */
+
+ #mi-parrafo {
+  color: red;
+  font-weight: 900;
+}

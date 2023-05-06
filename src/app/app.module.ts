@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './commons/menu/menu.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
