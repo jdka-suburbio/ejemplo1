@@ -1,2 +1,20 @@
 <app-menu></app-menu>
 <p>home works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>Nro</th>
+            <th>Apellidos</th>
+            <th>Nombres</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of dataPersonas">
+            <td></td>
+            <td>{{row.apellidos}}</td>
+            <td>{{row.nombres}}</td>                        
+            <td>{{row.edad}}</td>            
+        </tr>
+    </tbody>
+</table>
