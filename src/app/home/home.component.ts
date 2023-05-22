@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { PersonasService } from '../services/personas.service';
+import { Router } from "@angular/router"
 
 @Component({
   selector: 'app-home',
@@ -7,26 +8,31 @@ import { PersonasService } from '../services/personas.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+    nombres:string="";
+    apellidos:string="";
+    edad:number=0;
+
     data:any[] = [];
     dataPersonas:any[] = [];
-    constructor(private personas: PersonasService){}  
+    constructor(private personas: PersonasService, private router: Router){}  
     ngOnInit() {
-      /*
-      this.personas.postPersonas().subscribe((data)=>{
-        console.log("done");
-      })
-      */
-      this.personas.deletePersonas().subscribe((data)=>{
-        console.log("done");
-      })
-        
       this.personas.getPersonas().subscribe((data)=>{
-        this.data = data;
-        console.log(this.data);
-        this.data.forEach(element => {
-          this.dataPersonas.push(element)
-        });
+        this.dataPersonas = data;
         console.log(this.dataPersonas);
       })
+    }
+
+    Borrar(id:any){
+      this.personas.deletePersonas(id).subscribe((data)=>{
+        console.log("done");
+        window.location.reload();
+      })
+    }
+
+    Guardar(){
+      this.personas.postPersonas(this.nombres, this.apellidos, this.edad).subscribe((data)=>{
+        console.log("done");
+        window.location.reload();
+      })      
     }
 }

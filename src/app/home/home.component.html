@@ -1,20 +1,37 @@
 <app-menu></app-menu>
 <p>home works!</p>
-<table>
+
+<form>
+    <label>Nombres</label>
+    <input type="text" [(ngModel)]="nombres" name="nombres">
+    <br>
+    <label>Apellidos</label>
+    <input type="text" [(ngModel)]="apellidos" name="apellidos">
+    <br>
+    <label>Edad</label>
+    <input type="text" [(ngModel)]="edad" name="edad">
+    <br>
+    <button  (click)="Guardar()">Guardar</button>
+</form>    
+
+<table width="100%">
     <thead>
         <tr>
             <th>Nro</th>
             <th>Apellidos</th>
             <th>Nombres</th>
             <th>Edad</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let row of dataPersonas">
+        <tr *ngFor="let k of dataPersonas | keys">
             <td></td>
-            <td>{{row.apellidos}}</td>
-            <td>{{row.nombres}}</td>                        
-            <td>{{row.edad}}</td>            
+            <td>{{dataPersonas[k].apellidos}}</td>
+            <td>{{dataPersonas[k].nombres}}</td>                        
+            <td>{{dataPersonas[k].edad}}</td>            
+            <td><a href="#" (click)="Borrar(k)">Eliminar</a></td>
+            <td><a [routerLink]="['/personas',k]">Otro</a></td>
         </tr>
     </tbody>
 </table>
