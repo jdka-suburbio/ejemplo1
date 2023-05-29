@@ -15,6 +15,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { InicioFireBaseComponent } from './inicio-fire-base/inicio-fire-base.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     MenuComponent,
     ProgramacionComponent,
     CuestionarioComponent,
-    IncioComponent
+    IncioComponent,
+    InicioFireBaseComponent
   ],
   imports: [
     BrowserModule,
