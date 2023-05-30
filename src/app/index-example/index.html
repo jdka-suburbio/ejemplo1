@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuestionario en inglés</title>
+</head>
+<body>
+  <h1>Cuestionario en inglés</h1>
+
+  <form>
+    <h2>Información personal</h2>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <h2>Preguntas</h2>
+    <h3>1. ¿Cuál es el color del cielo en un día despejado?</h3>
+    <input type="radio" id="q1_blue" name="q1" value="blue" required>
+    <label for="q1_blue">Azul</label><br>
+    <input type="radio" id="q1_red" name="q1" value="red">
+    <label for="q1_red">Rojo</label><br>
+    <input type="radio" id="q1_yellow" name="q1" value="yellow">
+    <label for="q1_yellow">Amarillo</label><br>
+
+    <h3>2. ¿Cuál es la capital de Francia?</h3>
+    <input type="text" id="q2" name="q2" required>
+
+    <h3>3. ¿Cuál es el resultado de 2 + 2?</h3>
+    <input type="number" id="q3" name="q3" required>
+
+    <h3>4. ¿Verdadero o falso? El agua hierve a 100 grados Celsius.</h3>
+    <input type="radio" id="q4_true" name="q4" value="true" required>
+    <label for="q4_true">Verdadero</label><br>
+    <input type="radio" id="q4_false" name="q4" value="false">
+    <label for="q4_false">Falso</label><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
