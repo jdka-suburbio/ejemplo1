@@ -9,9 +9,11 @@ import { map } from 'rxjs/operators';
 export class ItemService {
   private itemsRef: AngularFireList<any>;
   private items: Observable<any[]>;
+  private lastItemId: number = 0; // Variable para almacenar el último ID registrado
 
   constructor(private db: AngularFireDatabase) {
     this.itemsRef = this.db.list('/items');
+    
     this.items = this.itemsRef.snapshotChanges().pipe(
       map(changes =>
         changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
@@ -24,28 +26,17 @@ export class ItemService {
   }
 
   addItem(item: any): void {
-    const newItem = { ...item, id: this.generateItemId() };
+    const newItem = { ...item, id: ++this.lastItemId }; // Incrementar el último ID registrado y asignarlo al nuevo item
     this.itemsRef.push(newItem);
   }
   
-  private generateItemId(): number {
-    // Obtiene el último ID registrado y le suma 1
-    const lastItemId = this.getLastItemId();
-    const newId = lastItemId ? lastItemId + 1 : 1;
-    return newId;
-  }
-  
-  private getLastItemId(): number | null {
-    // Recorre los items y obtiene el último ID registrado
-    let lastItemId: number | null = null;
+  private getLastItemId(): void {
     this.items.subscribe(items => {
       if (items.length > 0) {
-        lastItemId = items[items.length - 1].id;
+        this.lastItemId = items[items.length - 1].id; // Obtener el último ID registrado
       }
     });
-    return lastItemId;
   }
-  
 
   updateItem(key: string, item: any): void {
     this.itemsRef.update(key, item);

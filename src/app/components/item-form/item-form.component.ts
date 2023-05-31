@@ -40,6 +40,6 @@ export class ItemFormComponent implements OnInit {
     }
 
     // Redirigir al componente item-list después de guardar/enviar los datos
-    this.router.navigate(['item-list']);
+    this.router.navigate(['']);
   }
 }
