@@ -16,7 +16,6 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { InicioFireBaseComponent } from './inicio-fire-base/inicio-fire-base.component';
-import { CrudFirebaseComponent } from './crud-firebase/crud-firebase.component';
 import { ContactosComponent } from './components/contactos/contactos.component';
 import { CreateCursosComponent } from './components/create-cursos/create-cursos.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -37,7 +36,6 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     CuestionarioComponent,
     IncioComponent,
     InicioFireBaseComponent,
-    CrudFirebaseComponent,
     ContactosComponent,
     CreateCursosComponent,
     NavbarComponent,
