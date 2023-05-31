@@ -2,41 +2,55 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './commons/menu/menu.component';
+import { Component, inject } from '@angular/core';
+import { Firestore } from '@angular/fire/firestore';
+import { collection, collectionData, provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { ProgramacionComponent } from './programacion/programacion.component';
-import { CuestionarioComponent } from './cuestionario/cuestionario.component';
-import { IncioComponent } from './incio/incio.component';
+import { AppComponent } from './app.component';
+import { ListComponent } from './components/list/list.component';
+import { RegisterComponent } from './components/register/register.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-import { InicioFireBaseComponent } from './inicio-fire-base/inicio-fire-base.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MenuComponent,
-    ProgramacionComponent,
-    CuestionarioComponent,
-    IncioComponent,
-    InicioFireBaseComponent
+    ListComponent,
+    RegisterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule,
-    MatToolbarModule,
+    ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css']
+})
+
+export class AppModule { 
+  firestore: Firestore = inject(Firestore);
+  items$: Observable<any[]>;
+
+  constructor() {
+    const aCollection = collection(this.firestore, 'items')
+    this.items$ = collectionData(aCollection);
+  }
+}
+
+
