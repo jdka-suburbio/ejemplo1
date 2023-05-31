@@ -1,0 +1,13 @@
+<h2>{{ isNewItem ? 'Crear Item' : 'Editar Item' }}</h2>
+
+<form (ngSubmit)="saveItem()">
+  <div>
+    <label>Nombre:</label>
+    <input [(ngModel)]="item.name" name="name" required>
+  </div>
+  <div>
+    <label>Descripción:</label>
+    <textarea [(ngModel)]="item.description" name="description" required></textarea>
+  </div>
+  <button type="submit">{{ isNewItem ? 'Crear' : 'Guardar' }}</button>
+</form>

@@ -1,0 +1,10 @@
+<h2>Lista de Items</h2>
+
+<ul>
+  <li *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.description }}</span>
+    <button (click)="editItem(item)">Editar</button>
+    <button (click)="deleteItem(item)">Eliminar</button>
+  </li>
+</ul>

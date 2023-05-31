@@ -15,6 +15,11 @@ import { DisenhoAlexComponent } from './videos/disenho-alex/disenho-alex.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCardModule} from '@angular/material/card';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from './environments/environment';
+import { ItemFormComponent } from './components/item-form/item-form.component';
+import { FormsModule } from '@angular/forms';
+import { ItemListComponent } from './components/item-list/item-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,9 @@ import {MatCardModule} from '@angular/material/card';
     ProgramacionComponent,
     CuestionarioComponent,
     IncioComponent,
-    DisenhoAlexComponent
+    DisenhoAlexComponent,
+    ItemFormComponent,
+    ItemListComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,9 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     BrowserAnimationsModule,
     MatDatepickerModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
