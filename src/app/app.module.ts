@@ -16,6 +16,7 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { InicioFireBaseComponent } from './inicio-fire-base/inicio-fire-base.component';
+import { CrudFirebaseComponent } from './crud-firebase/crud-firebase.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { InicioFireBaseComponent } from './inicio-fire-base/inicio-fire-base.com
     ProgramacionComponent,
     CuestionarioComponent,
     IncioComponent,
-    InicioFireBaseComponent
+    InicioFireBaseComponent,
+    CrudFirebaseComponent
   ],
   imports: [
     BrowserModule,
