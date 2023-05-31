@@ -26,9 +26,14 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/purple-green.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -106,8 +111,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "my-first-project:build:production",
-            "firebaseProject": "api-rest-3a6f0",
-            "firebaseHostingSite": "api-rest-3a6f0"
+            "firebaseProject": "contactos-5731f",
+            "firebaseHostingSite": "contactos-5731f"
           }
         }
       }
