@@ -24,7 +24,6 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    HomeComponent,
     KeysPipe,
     ItemFormComponent,
     ItemListComponent
