@@ -1,11 +1,15 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ProgramacionComponent } from './programacion/programacion.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ListComponent } from './components/list/list.component';
 
 const routes: Routes = [
-  {path: '', component:HomeComponent},
-  {path: "programacion", component:ProgramacionComponent}
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
+  { path: 'list', component: ListComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'edit/:id', component: RegisterComponent },
+  { path: '**', redirectTo: 'list', pathMatch: 'full' },
 ];
 
 @NgModule({
