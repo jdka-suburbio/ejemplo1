@@ -24,8 +24,28 @@ export class ItemService {
   }
 
   addItem(item: any): void {
-    this.itemsRef.push(item);
+    const newItem = { ...item, id: this.generateItemId() };
+    this.itemsRef.push(newItem);
   }
+  
+  private generateItemId(): number {
+    // Obtiene el último ID registrado y le suma 1
+    const lastItemId = this.getLastItemId();
+    const newId = lastItemId ? lastItemId + 1 : 1;
+    return newId;
+  }
+  
+  private getLastItemId(): number | null {
+    // Recorre los items y obtiene el último ID registrado
+    let lastItemId: number | null = null;
+    this.items.subscribe(items => {
+      if (items.length > 0) {
+        lastItemId = items[items.length - 1].id;
+      }
+    });
+    return lastItemId;
+  }
+  
 
   updateItem(key: string, item: any): void {
     this.itemsRef.update(key, item);
@@ -39,7 +59,8 @@ export class ItemService {
       map((action) => {
         const key = action.key;
         const data = action.payload.val();
-        return { key, data };
+        const item = Object.assign({}, data, { key }); // Copia las propiedades del objeto `data` en un nuevo objeto `item`
+        return item;
       })
     );
   }

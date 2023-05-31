@@ -1,13 +1,49 @@
-<h2>{{ isNewItem ? 'Crear Item' : 'Editar Item' }}</h2>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ isNewItem ? 'Crear Item' : 'Editar Item' }}</mat-card-title>
+  </mat-card-header>
 
-<form (ngSubmit)="saveItem()">
-  <div>
-    <label>Nombre:</label>
-    <input [(ngModel)]="item.name" name="name" required>
-  </div>
-  <div>
-    <label>Descripción:</label>
-    <textarea [(ngModel)]="item.description" name="description" required></textarea>
-  </div>
-  <button type="submit">{{ isNewItem ? 'Crear' : 'Guardar' }}</button>
-</form>
+  <mat-card-content>
+    <form (ngSubmit)="saveItem()">
+      <div>
+        <mat-form-field>
+          <mat-label>Nombre:</mat-label>
+          <input matInput [(ngModel)]="item.name" name="name" required>
+        </mat-form-field>
+      </div>
+      <!-- Agrega aquí los nuevos campos -->
+      <div>
+        <mat-form-field>
+          <mat-label>First Name:</mat-label>
+          <input matInput [(ngModel)]="item.firstName" name="firstName" required>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Last Name:</mat-label>
+          <input matInput [(ngModel)]="item.lastName" name="lastName" required>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Username:</mat-label>
+          <input matInput [(ngModel)]="item.username" name="username" required>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Age:</mat-label>
+          <input matInput type="number" [(ngModel)]="item.age" name="age" required>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Salary:</mat-label>
+          <input matInput type="number" [(ngModel)]="item.salary" name="salary" required>
+        </mat-form-field>
+      </div>
+      <!-- Fin de los nuevos campos -->
+      <button mat-raised-button color="primary" type="submit">{{ isNewItem ? 'Crear' : 'Guardar' }}</button>
+    </form>
+  </mat-card-content>
+</mat-card>

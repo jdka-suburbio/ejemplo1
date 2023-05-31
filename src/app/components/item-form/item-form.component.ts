@@ -36,9 +36,7 @@ export class ItemFormComponent implements OnInit {
       this.itemService.addItem(this.item);
     } else {
       // Actualizar el item existente
-      console.log(this.item.key)
       this.itemService.updateItem(this.item.key, this.item);
-
     }
 
     // Redirigir al componente item-list después de guardar/enviar los datos

@@ -20,6 +20,10 @@ import { environment } from './environments/environment';
 import { ItemFormComponent } from './components/item-form/item-form.component';
 import { FormsModule } from '@angular/forms';
 import { ItemListComponent } from './components/item-list/item-list.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,13 @@ import { ItemListComponent } from './components/item-list/item-list.component';
     MatDatepickerModule,
     MatCardModule,
     AngularFireModule.initializeApp(environment.firebase),
-    FormsModule
+    FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatTableModule,
+    MatToolbarModule, 
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
