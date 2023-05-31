@@ -1,0 +1,33 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <span class="h3">Listado de Clases</span>
+            <button class="btn btn-dark btn-lg float-right" routerLink="/register">Agregar</button>
+            <table class="table table-striped mt-5">
+                <thead>
+                  <tr>
+                    <th>CLASE</th>
+                    <th>CLASES DE INICIO </th>
+                    <th>TEMARIO</th>
+                    <th>DOCENTE</th>
+                    <i class="fa-solid fa-pen-to-square fa-lg text-info mr-2"></i>
+                    <i class="fa-solid fa-trash fa-lg text-danger"></i>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let registro of registros">
+                    <td>{{ registro.descripcion1 }}</td>
+                    <td>{{ registro.descripcion2 }}</td>
+                    <td>{{ registro.descripcion3 }}</td>
+                    <td>{{ registro.descripcion4 }}</td>
+                    <td>
+                      <i class="fas fa-edit fa-lg text-info mr-2" [routerLink]="['/edit/', registro.id]"></i>
+                      <i (click)="eliminar(registro.id)" class="fas fa-trash-alt fa-lg text-danger"></i>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+</div>
