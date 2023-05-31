@@ -1,0 +1,71 @@
+{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="password"], textarea, select {
+        width: 200px;
+        padding: 5px;
+        border: 1
+}
+
+body {
+    
+        background-color: #FFC0CB;
+        background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-2-5d-simple-stereoscopic-financial-picture-image_964274.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #aaa;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3d1b12;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
