@@ -1,10 +1,11 @@
 export const environment = {
+    production: false,
   firebase: {
-    projectId: 'api-rest-3a6f0',
-    appId: '1:965171442731:web:51eda3cb479fc9ab4ca66e',
-    databaseURL: 'https://api-rest-3a6f0-default-rtdb.firebaseio.com',
-    storageBucket: 'api-rest-3a6f0.appspot.com',
-    apiKey: 'AIzaSyAhiyoU_Ovy_lghhchOJR3pe_UpV0OF5zE',
-    authDomain: 'api-rest-3a6f0.firebaseapp.com',
-    messagingSenderId: '965171442731',
-  },};
+    projectId: 'crud-1752d',
+    appId: '1:182854350672:web:d66de2765915c1105f9e55',
+    storageBucket: 'crud-1752d.appspot.com',
+    apiKey: 'AIzaSyDvlcw95c3bizvsbjHNpDCe7j0sUK7ADhY',
+    authDomain: 'crud-1752d.firebaseapp.com',
+    messagingSenderId: '182854350672',
+  }
+  };
