@@ -1,0 +1,147 @@
+[debug] [2023-05-29T08:22:47.787Z] ----------------------------------------------------------------------
+[debug] [2023-05-29T08:22:47.790Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-05-29T08:22:47.791Z] CLI Version:   12.2.1
+[debug] [2023-05-29T08:22:47.791Z] Platform:      win32
+[debug] [2023-05-29T08:22:47.792Z] Node Version:  v18.16.0
+[debug] [2023-05-29T08:22:47.793Z] Time:          Mon May 29 2023 04:22:47 GMT-0400 (hora de Bolivia)
+[debug] [2023-05-29T08:22:47.793Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-29T08:22:47.956Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-29T08:22:47.956Z] > authorizing via signed-in user (bryanriveraclaure@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-05-29T08:22:47.969Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-29T08:22:47.969Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-29T08:22:47.969Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-05-29T08:22:47.986Z] [hub] writing locator at C:\Users\PC\AppData\Local\Temp\hub-dop-sis414.json
+[debug] [2023-05-29T08:22:48.010Z] > refreshing access token with scopes: []
+[debug] [2023-05-29T08:22:48.013Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-29T08:22:48.013Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-29T08:22:48.302Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-29T08:22:48.303Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-29T08:22:48.383Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites 
+[debug] [2023-05-29T08:22:49.600Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites 200
+[debug] [2023-05-29T08:22:49.600Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites {"sites":[{"name":"projects/dop-sis414/sites/dop-sis414","defaultUrl":"https://dop-sis414.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-29T08:22:49.601Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config [none]
+[debug] [2023-05-29T08:22:50.671Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config 200
+[debug] [2023-05-29T08:22:50.671Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config {"projectId":"dop-sis414","appId":"1:837776196994:web:af6a2c0bdfc671a9387b9b","storageBucket":"dop-sis414.appspot.com","apiKey":"AIzaSyB3Vz38-lIQFFtXnC_ATVdEuoLhnGOlSM8","authDomain":"dop-sis414.firebaseapp.com","messagingSenderId":"837776196994"}
+[debug] [2023-05-29T08:22:50.693Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 [none]
+[debug] [2023-05-29T08:22:51.193Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 200
+[debug] [2023-05-29T08:22:51.193Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 {"projectId":"dop-sis414","projectNumber":"837776196994","displayName":"2doP-Sis414","name":"projects/dop-sis414","resources":{"hostingSite":"dop-sis414"},"state":"ACTIVE","etag":"1_8dafbbdd-e6d3-44eb-acbf-bae9d550da0f"}
+[info] i  hosting[dop-sis414]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting[dop-sis414]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-05-29T09:00:18.761Z] ----------------------------------------------------------------------
+[debug] [2023-05-29T09:00:18.764Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-05-29T09:00:18.765Z] CLI Version:   12.2.1
+[debug] [2023-05-29T09:00:18.765Z] Platform:      win32
+[debug] [2023-05-29T09:00:18.766Z] Node Version:  v18.16.0
+[debug] [2023-05-29T09:00:18.767Z] Time:          Mon May 29 2023 05:00:18 GMT-0400 (hora de Bolivia)
+[debug] [2023-05-29T09:00:18.767Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-29T09:00:18.893Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-29T09:00:18.893Z] > authorizing via signed-in user (bryanriveraclaure@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-05-29T09:00:18.906Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-29T09:00:18.906Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-29T09:00:18.907Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project dop-sis414. This may result in unexpected behavior. 
+[debug] [2023-05-29T09:00:18.925Z] [hub] writing locator at C:\Users\PC\AppData\Local\Temp\hub-dop-sis414.json
+[debug] [2023-05-29T09:00:18.945Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites 
+[debug] [2023-05-29T09:00:20.126Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites 200
+[debug] [2023-05-29T09:00:20.126Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites {"sites":[{"name":"projects/dop-sis414/sites/dop-sis414","defaultUrl":"https://dop-sis414.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-29T09:00:20.126Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config [none]
+[debug] [2023-05-29T09:00:21.161Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config 200
+[debug] [2023-05-29T09:00:21.161Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config {"projectId":"dop-sis414","appId":"1:837776196994:web:af6a2c0bdfc671a9387b9b","storageBucket":"dop-sis414.appspot.com","apiKey":"AIzaSyB3Vz38-lIQFFtXnC_ATVdEuoLhnGOlSM8","authDomain":"dop-sis414.firebaseapp.com","messagingSenderId":"837776196994"}
+[debug] [2023-05-29T09:00:21.181Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 [none]
+[debug] [2023-05-29T09:00:21.767Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 200
+[debug] [2023-05-29T09:00:21.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 {"projectId":"dop-sis414","projectNumber":"837776196994","displayName":"2doP-Sis414","name":"projects/dop-sis414","resources":{"hostingSite":"dop-sis414"},"state":"ACTIVE","etag":"1_8dafbbdd-e6d3-44eb-acbf-bae9d550da0f"}
+[info] i  hosting[dop-sis414]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting[dop-sis414]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [29/May/2023:09:02:22 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/May/2023:09:02:22 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [29/May/2023:09:02:22 +0000] "GET /styles.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/May/2023:09:02:22 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [29/May/2023:09:02:22 +0000] "GET /script.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/May/2023:09:02:22 +0000] \"GET /script.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [29/May/2023:09:02:23 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/May/2023:09:02:23 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [29/May/2023:09:03:52 +0000] "GET /?nombre=Marco+Bryan+Rivera+Claure&email=bryanriveraclaure%40gmail.com&password=dsafdsfds&edad=21&genero=hombre&intereses=lectura&pais=Bolivia&mensaje=2doP HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/May/2023:09:03:52 +0000] \"GET /?nombre=Marco+Bryan+Rivera+Claure&email=bryanriveraclaure%40gmail.com&password=dsafdsfds&edad=21&genero=hombre&intereses=lectura&pais=Bolivia&mensaje=2doP HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
+[debug] [2023-05-29T09:06:42.082Z] Received signal SIGHUP 1
+[debug] [2023-06-02T02:54:46.953Z] ----------------------------------------------------------------------
+[debug] [2023-06-02T02:54:46.956Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-06-02T02:54:46.956Z] CLI Version:   12.2.1
+[debug] [2023-06-02T02:54:46.957Z] Platform:      win32
+[debug] [2023-06-02T02:54:46.957Z] Node Version:  v18.16.0
+[debug] [2023-06-02T02:54:46.958Z] Time:          Thu Jun 01 2023 22:54:46 GMT-0400 (hora de Bolivia)
+[debug] [2023-06-02T02:54:46.958Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-02T02:54:47.006Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-06-02T02:54:47.175Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-02T02:54:47.175Z] > authorizing via signed-in user (bryanriveraclaure@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-06-02T02:54:47.217Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-02T02:54:47.218Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-02T02:54:47.218Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project dop-sis414. This may result in unexpected behavior. 
+[debug] [2023-06-02T02:54:47.328Z] [hub] writing locator at C:\Users\PC\AppData\Local\Temp\hub-dop-sis414.json
+[debug] [2023-06-02T02:54:47.354Z] > refreshing access token with scopes: []
+[debug] [2023-06-02T02:54:47.499Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-02T02:54:47.499Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-02T02:54:47.886Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-02T02:54:47.886Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-02T02:54:48.075Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites 
+[debug] [2023-06-02T02:54:48.078Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-06-02T02:54:48.078Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-06-02T02:54:49.257Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites 200
+[debug] [2023-06-02T02:54:49.257Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dop-sis414/sites {"sites":[{"name":"projects/dop-sis414/sites/dop-sis414","defaultUrl":"https://dop-sis414.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-06-02T02:54:49.257Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config [none]
+[debug] [2023-06-02T02:54:50.407Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config 200
+[debug] [2023-06-02T02:54:50.407Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414/webApps/-/config {"projectId":"dop-sis414","appId":"1:837776196994:web:af6a2c0bdfc671a9387b9b","storageBucket":"dop-sis414.appspot.com","apiKey":"AIzaSyB3Vz38-lIQFFtXnC_ATVdEuoLhnGOlSM8","authDomain":"dop-sis414.firebaseapp.com","messagingSenderId":"837776196994"}
+[debug] [2023-06-02T02:54:50.647Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 [none]
+[debug] [2023-06-02T02:54:51.159Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 200
+[debug] [2023-06-02T02:54:51.159Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dop-sis414 {"projectId":"dop-sis414","projectNumber":"837776196994","displayName":"2doP-Sis414","name":"projects/dop-sis414","resources":{"hostingSite":"dop-sis414"},"state":"ACTIVE","etag":"1_af51e774-fea0-486a-afc3-7502b94af3d2"}
+[info] i  hosting[dop-sis414]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting[dop-sis414]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
