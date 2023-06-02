@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crud-1752d": {
+      "hosting": {
+        "crud": [
+          "crud-1752d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crud-1752d"
+  }
+}
