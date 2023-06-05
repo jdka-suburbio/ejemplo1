@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     dataPersonas:any[] = [];
     
     dataSourcePersonas:any[] = [];
-    displayedColumns: string[] = ['apellidos', 'nombres', 'edad'];
+    displayedColumns: string[] = ['nro','apellidos', 'nombres', 'edad','acciones'];
 
     dataSource = new MatTableDataSource<any>();
 
@@ -28,7 +28,9 @@ export class HomeComponent implements OnInit {
         let aux = Object.entries(this.dataPersonas);
         aux.forEach((item)=>
         {
+          item[1].acciones = "";          
           this.dataSourcePersonas.push(item[1])
+          console.log(item);  
         })
         this.dataSource.data = this.dataSourcePersonas;
         console.log(this.dataSourcePersonas);
