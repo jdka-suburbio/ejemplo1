@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "api-rest-3a6f0": {
+      "hosting": {
+        "my-first-project": [
+          "api-rest-3a6f0"
+        ]
+      }
+    },
+    "contactos-5731f": {
+      "hosting": {
+        "my-first-project": [
+          "contactos-5731f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "contactos-5731f"
+  }
+}
