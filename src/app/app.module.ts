@@ -15,6 +15,11 @@ import { KeysPipe } from './pipe/keys.pipe';
 //Table Material UI
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 @NgModule({
@@ -32,7 +37,11 @@ import { MatIconModule } from '@angular/material/icon';
     HttpClientModule,
     FormsModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
