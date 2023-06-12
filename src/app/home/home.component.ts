@@ -52,4 +52,9 @@ export class HomeComponent implements OnInit {
         window.location.reload();
       })      
     }
+
+    openDialog()
+    {
+      
+    }
 }
