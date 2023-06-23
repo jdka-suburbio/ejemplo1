@@ -22,6 +22,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from './contact/contact.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     MenuComponent,
     KeysPipe,
-    ContactComponent
+    ContactComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,9 @@ import { ContactComponent } from './contact/contact.component';
     MatDividerModule,
     MatCardModule,
     MatMenuModule,
-    MatDialogModule    
+    MatDialogModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())    
   ],
   providers: [],
   bootstrap: [AppComponent]
