@@ -27,6 +27,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { ContenidoComponent } from './contenido/contenido.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LoginComponent } from './login/login.component';
     KeysPipe,
     ContactComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ContenidoComponent
   ],
   imports: [
     BrowserModule,

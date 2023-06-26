@@ -5,17 +5,19 @@
       </button>
       <span>Sis 414 G1</span>
       <span class="example-spacer"></span>
-      <a routerLink="" mat-button>Inicio</a>
-      <a routerLink="#" mat-button>Contenido</a>
+      <a routerLink="/" mat-button>Inicio</a>
+      <a routerLink="/content" mat-button>Contenido</a>
       <a routerLink="#" mat-button>Cuestionarios</a>
       <button mat-button [matMenuTriggerFor]="menu">Videos</button>
       <mat-menu #menu="matMenu">
         <a routerLink="#" mat-menu-item>C#</a>
         <a routerLink="#" mat-menu-item>JavaScript</a>
       </mat-menu>        
-      <a routerLink="contact" mat-button>Contacto</a>         
+      <a routerLink="/contact" mat-button>Contacto</a>         
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>account_circle</mat-icon>
-      </button>      
+      </button>
+      <a (click)="logOut()" mat-button>LogOut</a>               
+      <a mat-button>{{userAuth}}</a>    
     </mat-toolbar>
 </p>

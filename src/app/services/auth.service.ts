@@ -28,4 +28,7 @@ export class AuthService {
   logout() {
     return signOut(this.auth);
   }
+  getAuthFire(){
+    return this.auth.currentUser;
+  }
 }

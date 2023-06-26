@@ -23,7 +23,9 @@ export class RegisterComponent {
 
   loginGoogle()
   {
-    this.auth.loginWithGoogle().then(() => this.router.navigate(['/']))
+    this.auth.loginWithGoogle().then(() => {
+      this.router.navigate(['/'])
+    })
     .catch((e) => console.log(e.message));;
   }
 }
