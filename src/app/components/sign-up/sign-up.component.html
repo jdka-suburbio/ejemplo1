@@ -1,0 +1,23 @@
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Registro de Usuario</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="onRegister()" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <mat-form-field>
+          <input matInput type="email" [(ngModel)]="email" name="email" placeholder="Correo Electrónico" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit">Registrar</button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>¿Tienes una cuenta? <a routerLink="/sign-in">Iniciar Sesión</a></p>
+    </mat-card-actions>
+  </mat-card>
+</div>

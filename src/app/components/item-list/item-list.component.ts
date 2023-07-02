@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./item-list.component.css']
 })
 export class ItemListComponent implements OnInit {
+  
   items: any[] = []; // Array para almacenar los items
   displayedColumns: string[] = ['id', 'name', 'firstName', 'lastName', 'username', 'age', 'salary', 'actions'];
 
