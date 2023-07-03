@@ -67,6 +67,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HttpClientModule,
     FormsModule,
     AngularFireAuthModule,
+
+    
   ],
   //providers: [AuthService],
   bootstrap: [AppComponent]

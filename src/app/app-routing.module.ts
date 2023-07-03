@@ -6,13 +6,13 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-import { AuthGuard } from './auth.guard';
+import { AuthGuard, canActivate } from './auth.guard';
 
 const routes: Routes = [
+  {path: '', component:ItemListComponent, canActivate: [canActivate]},
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   {path: 'item-form', component: ItemFormComponent },
   {path: 'item-form/:id', component: ItemFormComponent },
-  {path: "", component:ItemListComponent, canActivate: [AuthGuard]},
-  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
