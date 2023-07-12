@@ -1,0 +1,36 @@
+<app-menu></app-menu>
+<p>register works!</p>
+
+<mat-card>
+    <mat-card-content>
+      <form>
+        <section> 
+          <mat-form-field class="example-form-field">
+            <mat-label>Email</mat-label>
+            <input matInput type="text" [(ngModel)]="email" name="apellidos">
+            <button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </section>
+        <mat-divider></mat-divider>
+        <section> 
+          <mat-form-field class="example-form-field">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" [(ngModel)]="clave" name="nombres">
+            <button *ngIf="clave" matSuffix mat-icon-button aria-label="Clear" (click)="clave=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>  
+        </section>
+        <mat-divider></mat-divider>
+        <section>
+          <button mat-flat-button color="primary" (click)="register()">Registrar</button>
+        </section>
+        <mat-divider></mat-divider>
+        <section>
+          <button mat-flat-button color="accent" (click)="loginGoogle()">Autentificate con Google</button>
+        </section>        
+      </form>    
+    </mat-card-content>
+  </mat-card>

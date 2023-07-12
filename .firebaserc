@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "api-rest-7d001": {
+      "hosting": {
+        "my-first-project": [
+          "api-rest-7d001"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "api-rest-7d001"
+  }
+}

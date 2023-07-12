@@ -1,0 +1,110 @@
+<app-menu></app-menu>
+<p>ingli works!</p>
+
+<img src="/assets/images/download.png">
+
+<mat-icon aria-hidden="false" aria-label="Example ingli icon" fontIcon="ingli"> </mat-icon>
+
+<mat-card>
+    <mat-card-content>
+        <from>
+            <section>
+                <mat-from-field class="example-from-field">
+                    <mat-label>English</mat-label>
+                    <input matInput type="text" [(ngModel)]="english" name="english">
+                    <button *ngIf="english" matSuffix mat-icon-button aria-label="Clear" (Click)="english=''">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-from-field>
+            </section>
+            <mat-divider></mat-divider>
+            <section>
+                <mat-from-field class="example-from-field">
+                    <mat-label>Español</mat-label>
+                    <input matInput type="text" [(ngModel)]="español" name="español">
+                    <button *ngIf="español" matSuffix mat-icon-button aria-label="Clear" (clink)="español=''">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-from-field>
+            </section>
+            <mat-divider></mat-divider>
+            <section>
+                <mat-form-field class="example-from-field">
+                    <mat-label>Pronunciacion</mat-label>
+                    <input matInput type="text" [(ngModel)]="pronunciacion" name="pronunciacion">
+                    <button *ngIf="pronunciacion" matSuffix mat-icon-button aria-label="Clear">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-form-field>
+            </section>
+            <mat-divider></mat-divider>
+            <section>
+                <button mat-flat-button color="primary" (click)="Guardar()">Guardar</button>
+            </section>
+        </from>
+    </mat-card-content>
+</mat-card>
+
+<button mat-flat-button color="primary" (click)="openDialog()">Agregar Usuario</button>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+ 
+        <!--Acciones Column -->
+        <ng-container matColumnDef="nro">
+            <th mat-header-cell *matHeaderCellDef> Nro </th>
+            <td mat-cell *matCellDef="let element; let i=index;">
+                {{i + 1}}
+            </td>
+        </ng-container>
+
+        <!-- name column -->
+        <ng-container matColumnDef="english">
+            <th mat-header-cell *matHeaderCellDef> English </th>
+            <td mat-cell *matCellDef="let element"> {{element.english}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="español">
+            <th mat-header-cell *matHeaderCellDef> Español </th>
+            <td mat-cell *matCellDef="let element"> {{element.español}} </td>
+        </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="pronunciacion">
+        <th mat-header-cell *matHeaderCellDef> Pronunciacion </th>
+        <td mat-cell *matCellDef="let element"> {{element.pronunciacion}}</td>
+    </ng-container>
+
+    <!-- Acciones Column -->
+    <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef> Acciones </th>
+        <td mat-cell *matCellDef="let element">    
+          <mat-icon aria-hidden="false" fontIcon="edit"></mat-icon>  
+          <mat-icon aria-hidden="false" fontIcon="delete"></mat-icon>  
+        </td>   
+      </ng-container> 
+
+    <tr mat-header-row *marHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<table width="100%">
+    <thead>
+        <tr>
+            <th>Nro</th>
+            <th>English</th>
+            <th>Español</th>
+            <th>Pronunciacion</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let k of dataIngles | keys">
+            <td></td>
+            <td>{{dataIngles[k].english}}</td>
+            <td>{{dataIngles[k].español}}</td>                        
+            <td>{{dataIngles[k].pronunciacion}}</td>            
+            <td><a href="#" (click)="Borrar(k)">Eliminar</a></td>
+            <td><a [routerLink]="['/ingles',k]">Otro</a></td>
+        </tr>
+    </tbody> 
+</table>
