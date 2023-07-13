@@ -1,4 +1,4 @@
-<app-menu></app-menu>
+<app-ingli></app-ingli>
 <p>ingli works!</p>
 
 <img src="/assets/images/download.png">
@@ -27,7 +27,7 @@
                     </button>
                 </mat-from-field>
             </section>
-            <mat-divider></mat-divider>
+            <mat-divider> </mat-divider>
             <section>
                 <mat-form-field class="example-from-field">
                     <mat-label>Pronunciacion</mat-label>
@@ -60,7 +60,7 @@
         <!-- name column -->
         <ng-container matColumnDef="english">
             <th mat-header-cell *matHeaderCellDef> English </th>
-            <td mat-cell *matCellDef="let element"> {{element.english}} </td>
+            <td mat-cell *matCellDef="let element">{{element.english}} </td>
         </ng-container>
 
         <!-- Weight Column -->
@@ -102,9 +102,11 @@
             <td></td>
             <td>{{dataIngles[k].english}}</td>
             <td>{{dataIngles[k].español}}</td>                        
-            <td>{{dataIngles[k].pronunciacion}}</td>            
+            <td>{{dataIngles[k].pronunciacion}}</td>   
+                     
             <td><a href="#" (click)="Borrar(k)">Eliminar</a></td>
             <td><a [routerLink]="['/ingles',k]">Otro</a></td>
         </tr>
     </tbody> 
 </table>
+
